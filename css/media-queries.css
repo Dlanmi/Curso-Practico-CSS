@@ -1,0 +1,44 @@
+@media (max-width: 900px) {
+  .blogs-main-new {
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .blog-news-img-container {
+    grid-row: 2;
+  }
+  .blogs-news-info-container {
+    margin: 20px 70px;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .blogs-posts-container {
+    padding: 40px;
+  }
+
+  /* Pefil */
+  .section-profile-about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "img img"
+      "title title"
+      "text text";
+    justify-items: center;
+    align-items: center;
+  }
+  .section-profile-about img {
+    grid-area: img;
+    width: 100%;
+  }
+  .section-profile-about h3 {
+    grid-area: title;
+    grid-row: 2;
+    padding: 0;
+  }
+  .section-profile-about p {
+    grid-area: text;
+    grid-row: 3;
+    padding: 0;
+  }
+}
